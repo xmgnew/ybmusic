@@ -1,8 +1,9 @@
 /*
-* @Author: hwaphon
+* @Author: hwaphon (modifed by expldfsh)
 * @Date:   2017-02-16 16:31:15
 * @Last Modified by:   hwaphon
-* @Last Modified time: 2017-03-26 20:14:33
+* @Last Modified time: 2017-03-26 20:14:33 by hwaphon
+* @Last Modified time: 2024-03-10 by expldfsh
 */
 
 *,*::after,*::before {
@@ -31,7 +32,7 @@ article#music-player {
 
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
-    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    background-image: linear-gradient(to right, rgba(140, 13, 224, 0.7) 0%, rgba(16, 211, 236, 0.5) 100%);
     box-shadow: 1px 0px 2px 2px rgba(0,0,0,.1);
 }
 
@@ -75,7 +76,7 @@ div#album-picture img {
 #music-singer {
     font-size: 12px;
 
-    color: #aaa;
+    color: #fff;
 }
 
 #music-content {
@@ -102,13 +103,15 @@ div#album-picture img {
     color: #fff;
     border: 2px solid #fff;
     border-radius: 50%;
-    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    background-image: linear-gradient(to right, rgba(140, 13, 224, 0.7) 0%, rgba(16, 211, 236, 0.5) 100%);
+    box-shadow: 1px 0px 2px 2px rgba(0,0,0,.1);
 }
 
 #music-stop:hover,
 #music-pre:hover,
 #music-next:hover {
-    background-image: linear-gradient(to bottom, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    background-image: linear-gradient(to right, rgba(140, 13, 224, 0.7) 0%, rgba(16, 211, 236, 0.5) 100%);
+    box-shadow: 1px 0px 2px 2px rgba(0,0,0,.1);
 }
 
 #music-stop, #music-pre, #music-next {
@@ -145,7 +148,7 @@ div#album-picture img {
     margin-left: 8px;
 
     border-radius: 8px;
-    border:1px solid #517fa4;
+    border:1px solid #1e32e4;
     cursor: pointer;
 }
 
@@ -189,7 +192,7 @@ aside progress {
 
 progress::-webkit-progress-value {
     border-radius: 12px;
-    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    background-image: linear-gradient(to right, #6c0aa5 0%, #a011e2 100%);
 }
 
 progress::-webkit-progress-bar {
@@ -198,7 +201,7 @@ progress::-webkit-progress-bar {
 
 progress::-moz-progress-bar {
     border-radius: 12px;
-    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    background-image: linear-gradient(to right, rgba(140, 13, 224, 0.7) 0%, rgba(16, 211, 236, 0.5) 100%);
 }
 
 #current-time {
@@ -262,7 +265,7 @@ article#music-list {
     width: 518px;
     height: 380px;
     margin: 0px auto;
-    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    background-image: linear-gradient(to right, rgba(140, 13, 224, 0.7) 0%, rgba(16, 211, 236, 0.5) 100%);
     box-shadow: 1px 0px 2px 2px rgba(0,0,0,.1);
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -286,18 +289,20 @@ article#music-list {
 }
 
 #music-list li.selected {
-    background-color: #243949;
+    background-image: linear-gradient(to right, rgba(236, 177, 16, 0.7) 0%, rgba(233, 17, 161, 0.5) 100%);
+    box-shadow: 1px 0px 2px 2px rgba(0,0,0,.1);
 }
 
 #music-list li:hover {
-    background-color: #243949;
+    background-image: linear-gradient(to right, rgba(140, 13, 224, 0.7) 0%, rgba(16, 211, 236, 0.5) 100%);
+    box-shadow: 1px 0px 2px 2px rgba(0,0,0,.1);
 }
 li.play {
     color: #06c;
 }
 
 ::-webkit-scrollbar {
-    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+    background-image: linear-gradient(to right, #8909df 0%, #df0ef1 100%);
     border-radius: 12px;
 }
 

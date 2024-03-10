@@ -107,13 +107,21 @@
 		index = 0;
 
 	(function init() {
-		var music = new Music("测试", "raw/fly.ogg");
-		musicQueue.addMusic(music);
-		musicTitleElement.innerHTML = music.name;
-		player.src = music.src;
-		setTimeout(setDuration, 500);
-		appendMusicToDOM("测试");
-		setSelected(index);
+    var music1 = new Music("聆听星 (Stargazing)", "raw/music1.mp3"); // Replace with your actual file name and path
+    var music2 = new Music("Bossa Bossa", "raw/music2.mp3"); // Replace with your actual file name and path
+    var music3 = new Music("冬雨梦幻曲 (Fantasia of Winter Rain)", "raw/music3.mp3"); // Replace with your actual file name and path
+
+    musicQueue.addMusic(music1);
+    musicQueue.addMusic(music2);
+    musicQueue.addMusic(music3);
+
+    musicTitleElement.innerHTML = music1.name;
+    player.src = music1.src;
+    setTimeout(setDuration, 500);
+    appendMusicToDOM(music1.name);
+    appendMusicToDOM(music2.name);
+    appendMusicToDOM(music3.name);
+    setSelected(index);
 	})();
 	/* end init view */
 
