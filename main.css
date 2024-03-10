@@ -17,7 +17,9 @@ html,body {
     font-family: sans-serif;
 }
 body {
-    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    background-image: url('raw/15.jpg');
+    background-size: cover; /* Cover the entire page */
+    background-position: center; /* Center the background image */
 }
 
 article#music-player {
